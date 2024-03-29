@@ -1,0 +1,53 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    z-index:unset;
+    background-image: url(../img/Etheron.png);
+  overflow: hidden;
+  }
+  
+  .bg {
+    position: fixed;
+    top: 0;
+    left:0%;
+    right: 20px;
+    width: 110%;
+    margin-right: 10%;
+    height: 100%;
+    background-image: url(../img/Etheron.png); 
+    background-size: cover;
+
+    z-index: -3;
+  }
+  .centered-planet {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    animation: rotate 3s linear infinite;
+  }
+ .or_font{
+    position: relative;
+    left: 25%;
+    
+ }
+ 
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+.centered-planet2 {
+  position: absolute;
+  top: -20%;
+  left: -20;
+  margin-right: 50%;
+  z-index: 1;
+  animation: rotate 3s linear infinite;
+}
